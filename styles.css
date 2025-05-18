@@ -1,0 +1,725 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Neue', cursive;
+    background-color: #f0f8ff;
+    background-image: url('./fondo.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #4a4a4a;
+    position: relative;
+    min-height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(240, 248, 255, 0.6);
+    z-index: -1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    position: relative;
+    z-index: 1;
+}
+
+header {
+    text-align: center;
+    padding: 40px 0;
+    background-color: #b3d9ff;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.music-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #4d94ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1.1em;
+    transition: transform 0.3s ease;
+}
+
+.music-button:hover {
+    transform: scale(1.1);
+}
+
+.special-messages {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.special-messages h2 {
+    text-align: center;
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.message-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.message-card {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    border-left: 5px solid #4d94ff;
+}
+
+.message-card:hover {
+    transform: translateY(-5px);
+}
+
+.message-card h3 {
+    color: #4d94ff;
+    margin-bottom: 15px;
+}
+
+.message-card p {
+    line-height: 1.6;
+}
+
+.floating-hearts {
+    font-size: 1.5em;
+    margin-top: 10px;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #4d94ff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 1.5em;
+    color: #66b3ff;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.snoopy-image img {
+    max-width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.snoopy-image img:hover {
+    transform: scale(1.1);
+}
+
+.welcome-text {
+    text-align: center;
+}
+
+.welcome-text h2 {
+    color: #4d94ff;
+    margin-bottom: 15px;
+}
+
+.gallery {
+    margin: 40px 0;
+}
+
+.gallery h2 {
+    text-align: center;
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.sticker-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.sticker {
+    background-color: white;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.sticker:hover {
+    transform: translateY(-10px);
+}
+
+.sticker img {
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.tulips {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tulips h2 {
+    text-align: center;
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.tulip-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tulip-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.tulip-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.tulip-facts {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #4d94ff;
+}
+
+.tulip-facts h3 {
+    color: #4d94ff;
+    margin-bottom: 15px;
+}
+
+.tulip-facts ul {
+    list-style-type: none;
+}
+
+.tulip-facts li {
+    margin-bottom: 10px;
+    padding-left: 25px;
+    position: relative;
+}
+
+.tulip-facts li:before {
+    content: "🌷";
+    position: absolute;
+    left: 0;
+}
+
+.tulip-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.tulip-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    animation: float 3s ease-in-out infinite;
+}
+
+.interactive {
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interactive h2 {
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.games-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    padding: 20px;
+}
+
+.game-section {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.game-section:hover {
+    transform: translateY(-5px);
+}
+
+.game-section h3 {
+    color: #4d94ff;
+    margin-bottom: 20px;
+    font-size: 1.2em;
+}
+
+.game-button {
+    background-color: #4d94ff;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    margin: 10px 0;
+}
+
+.game-button:hover {
+    background-color: #66b3ff;
+    transform: scale(1.05);
+}
+
+.mood-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.mood-button {
+    background-color: #4d94ff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: 'Comic Neue', cursive;
+    width: 100%;
+    max-width: 200px;
+}
+
+.mood-button:hover {
+    background-color: #66b3ff;
+    transform: scale(1.05);
+}
+
+.mood-result {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: white;
+    min-height: 50px;
+}
+
+.find-woodstock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.woodstock-container {
+    width: 200px;
+    height: 200px;
+    background-color: white;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+}
+
+.woodstock-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease;
+}
+
+.woodstock-container img.hidden {
+    opacity: 0;
+}
+
+.writing-game {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#storyInput {
+    padding: 10px;
+    border: 2px solid #4d94ff;
+    border-radius: 10px;
+    font-family: 'Comic Neue', cursive;
+    font-size: 1em;
+    width: 100%;
+}
+
+.story-result {
+    margin-top: 15px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 10px;
+    min-height: 50px;
+    text-align: left;
+}
+
+#hugCounter {
+    margin-top: 15px;
+    font-size: 1.2em;
+    color: #4d94ff;
+}
+
+.hug-message {
+    margin-top: 10px;
+    font-size: 1.1em;
+    color: #4d94ff;
+    background: #e6f3ff;
+    border-radius: 12px;
+    padding: 10px 15px;
+    min-height: 30px;
+    transition: opacity 0.3s;
+    box-shadow: 0 2px 8px rgba(77, 148, 255, 0.08);
+    font-family: 'Comic Neue', cursive;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #4d94ff;
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .snoopy-image img {
+        max-width: 200px;
+    }
+
+    .sticker-container {
+        gap: 15px;
+    }
+
+    .tulip-container {
+        flex-direction: column;
+    }
+
+    .tulip-info, .tulip-image {
+        min-width: 100%;
+    }
+
+    .games-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.hobbies, .friends {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.hobbies h2, .friends h2 {
+    text-align: center;
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.hobbies-container, .friends-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.hobby-card, .friend-card {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+    max-width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    border-left: 5px solid #4d94ff;
+}
+
+.hobby-card:hover, .friend-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hobby-card h3, .friend-card h3 {
+    color: #4d94ff;
+    margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.hobby-card p, .friend-card p {
+    line-height: 1.6;
+    font-size: 1.1em;
+}
+
+.hobby-card {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.friend-card {
+    background: linear-gradient(135deg, #f0f8ff 0%, #e6f3ff 100%);
+}
+
+.snoopy-jump-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.snoopy-jump {
+    width: 80px;
+    transition: transform 0.3s cubic-bezier(.68,-0.55,.27,1.55);
+}
+.jump-message {
+    margin-top: 8px;
+    font-size: 1em;
+    color: #4d94ff;
+    min-height: 24px;
+    font-family: 'Comic Neue', cursive;
+}
+
+.dream-game {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.dream-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.snoopy-dream {
+    width: 80px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(77, 148, 255, 0.08);
+}
+.dream-bubble {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 2em;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.spiderman-section {
+    margin: 40px 0;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.spiderman-section h2 {
+    text-align: center;
+    color: #4d94ff;
+    margin-bottom: 30px;
+}
+
+.spiderman-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.spiderman-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.spiderman-info h3 {
+    color: #4d94ff;
+    margin-bottom: 20px;
+    font-size: 1.8em;
+}
+
+.spiderman-info p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.spiderman-facts {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 15px;
+    border-left: 5px solid #4d94ff;
+}
+
+.spiderman-facts h4 {
+    color: #4d94ff;
+    margin-bottom: 15px;
+    font-size: 1.4em;
+}
+
+.spiderman-facts ul {
+    list-style: none;
+    padding-left: 20px;
+}
+
+.spiderman-facts li {
+    margin-bottom: 10px;
+    position: relative;
+    padding-left: 25px;
+}
+
+.spiderman-facts li:before {
+    content: '🕷️';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.spiderman-image {
+    flex: 1;
+    min-width: 300px;
+    text-align: center;
+}
+
+.spiderman-image img {
+    max-width: 100%;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.spiderman-image img:hover {
+    transform: scale(1.05);
+}
+
+.hidden-message {
+    margin-top: 20px;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.hidden-message p {
+    color: #4d94ff;
+    font-style: italic;
+    transition: opacity 0.3s ease;
+}
+
+.secret-message {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #f0f8ff;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+    z-index: 10;
+    min-width: 250px;
+    border: 2px solid #4d94ff;
+}
+
+/* Para dispositivos con hover (desktop) */
+@media (hover: hover) {
+    .hidden-message:hover .secret-message {
+        opacity: 1;
+        visibility: visible;
+        top: 120%;
+    }
+}
+
+/* Para dispositivos táctiles (móviles) */
+@media (hover: none) {
+    .hidden-message.active .secret-message {
+        opacity: 1;
+        visibility: visible;
+        top: 120%;
+    }
+}
+
+.secret-message p {
+    color: #4d94ff;
+    font-size: 1.1em;
+    line-height: 1.4;
+    margin: 0;
+    text-align: center;
+} 

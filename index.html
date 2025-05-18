@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snoopy - El Perro Más Adorable</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Snoopy</h1>
+            <p class="subtitle">El perro más adorable del mundo</p>
+            <button id="musicButton" class="music-button">🎵 Música</button>
+        </header>
+
+        <main>
+            <section class="hero">
+                <div class="snoopy-image">
+                    <img src="feliz.jpeg" alt="Snoopy feliz">
+                </div>
+                <div class="welcome-text">
+                    <h2>¡Bienvenida a mi página!</h2>
+                    <p>Soy Snoopy, y estoy aquí para hacerte sonreír 😊</p>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <h2>Mis Momentos Favoritos</h2>
+                <div class="sticker-container">
+                    <div class="sticker">
+                        <img src="bailando.jpeg" alt="Snoopy bailando">
+                        <p>¡Bailando!</p>
+                    </div>
+                    <div class="sticker">
+                        <img src="durmiendo.jpeg" alt="Snoopy durmiendo">
+                        <p>¡Durmiendo!</p>
+                    </div>
+                    <div class="sticker">
+                        <img src="escribiendo.jpeg" alt="Snoopy escribiendo">
+                        <p>¡Escribiendo!</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="hobbies">
+                <h2>Mis Hobbies Favoritos 🎨</h2>
+                <div class="hobbies-container">
+                    <div class="hobby-card">
+                        <h3>Escribir Novelas</h3>
+                        <p>Me encanta escribir historias en mi máquina de escribir. Mi famosa frase es: "Era una noche oscura y tormentosa..." 📝</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Ser Piloto de Guerra</h3>
+                        <p>¡Sí! Me imagino como un as del aire, volando sobre mi caseta roja. ¡Viva el Barón Rojo! ✈️</p>
+                    </div>
+                    <div class="hobby-card">
+                        <h3>Jugar al Béisbol</h3>
+                        <p>Soy el mejor jugador de béisbol del mundo... ¡al menos en mis sueños! ⚾</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="friends">
+                <h2>Mis Amigos 🐾</h2>
+                <div class="friends-container">
+                    <div class="friend-card">
+                        <h3>Charlie Brown</h3>
+                        <p>Mi mejor amigo y dueño. Siempre está ahí para mí, aunque a veces se siente un poco inseguro.</p>
+                    </div>
+                    <div class="friend-card">
+                        <h3>Woodstock</h3>
+                        <p>Mi pequeño amigo pájaro. ¡Es el mejor compañero de aventuras!</p>
+                    </div>
+                    <div class="friend-card">
+                        <h3>Linus</h3>
+                        <p>El filósofo del grupo. Siempre tiene su manta de seguridad.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="tulips">
+                <h2>¡Te regalo Tulipanes Azules! 🌷</h2>
+                <div class="tulip-container">
+                    <div class="tulip-info">
+                        <p>Sabía que te encantan los tulipanes azules, así que te he preparado esta sección especial. Los tulipanes azules son tan especiales como tú, y me encanta ver cómo tus ojos brillan cuando los ves. ¡Espero que te gusten! 💙</p>
+                        <div class="tulip-facts">
+                            <h3>¿Por qué tulipanes azules para ti?</h3>
+                            <ul>
+                                <li>Porque son tan únicos y especiales como tú</li>
+                                <li>Porque su color azul refleja tu dulzura y paz interior</li>
+                                <li>Porque son el regalo perfecto para alguien tan especial</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="tulip-image">
+                        <img src="tulipanes.jpeg" alt="Tulipán azul">
+                    </div>
+                </div>
+            </section>
+
+            <section class="special-messages">
+                <h2>Mensajes Especiales 💌</h2>
+                <div class="message-container">
+                    <div class="message-card">
+                        <h3>Para ti...</h3>
+                        <p>Tu sonrisa ilumina mi mundo como los tulipanes azules iluminan la primavera. 🌸</p>
+                    </div>
+                    <div class="message-card">
+                        <h3>Mi deseo...</h3>
+                        <p>Que cada mañana te despiertes con la misma alegría que me da verte sonreír. 💖</p>
+                    </div>
+                    <div class="message-card">
+                        <h3>Gracias por...</h3>
+                        <p>Ser tan especial, por tu dulzura y por hacer que cada momento sea mágico. 🌟</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive">
+                <h2>¡Juega conmigo! 🎮</h2>
+                <div class="games-container">
+                    <div class="game-section">
+                        <h3>¡Dame un abrazo! 🤗</h3>
+                        <button id="hugButton" class="game-button">¡Abrazar!</button>
+                        <div id="hugCounter">Abrazos: 0</div>
+                        <div id="hugMessage" class="hug-message"></div>
+                    </div>
+
+                    <div class="game-section">
+                        <h3>¡Adivina mi estado de ánimo! 😊</h3>
+                        <div class="mood-game">
+                            <button id="happyButton" class="mood-button">😊 Feliz</button>
+                            <button id="sleepyButton" class="mood-button">😴 Dormido</button>
+                            <button id="dancingButton" class="mood-button">💃 Bailando</button>
+                            <div id="moodResult" class="mood-result"></div>
+                        </div>
+                    </div>
+
+                    <div class="game-section">
+                        <h3>¡Encuentra a Woodstock! 🐦</h3>
+                        <div class="find-woodstock">
+                            <div class="woodstock-container">
+                                <img src="woodstock.jpeg" alt="Woodstock" id="woodstockImage" class="hidden">
+                            </div>
+                            <button id="findWoodstockButton" class="game-button">¡Buscar a Woodstock!</button>
+                        </div>
+                    </div>
+
+                    <!-- Juego 1: Snoopy Saltarín -->
+                    <div class="game-section">
+                        <h3>Snoopy Saltarín 🐶</h3>
+                        <div class="jumper-game">
+                            <div class="snoopy-jump-container">
+                                <img src="saltando.jpeg" alt="Snoopy saltando" id="snoopyJumpImg" class="snoopy-jump">
+                            </div>
+                            <button id="jumpButton" class="game-button">¡Saltar!</button>
+                            <div id="jumpCounter">Saltos: 0</div>
+                            <div id="jumpMessage" class="jump-message"></div>
+                        </div>
+                    </div>
+
+                    <!-- Juego 2: ¿Qué está soñando Snoopy? -->
+                    <div class="game-section">
+                        <h3>¿Qué está soñando Snoopy? ☁️</h3>
+                        <div class="dream-game">
+                            <div class="dream-container">
+                                <img src="durmiendo.jpeg" alt="Snoopy durmiendo" class="snoopy-dream">
+                                <div id="dreamBubble" class="dream-bubble">💭</div>
+                            </div>
+                            <button id="dreamButton" class="game-button">¡Ver sueño!</button>
+                        </div>
+                    </div>
+
+                    <div class="game-section">
+                        <h3>¡Escribe conmigo! ✍️</h3>
+                        <div class="writing-game">
+                            <input type="text" id="storyInput" placeholder="Escribe el inicio de una historia...">
+                            <button id="continueStoryButton" class="game-button">¡Continuar historia!</button>
+                            <div id="storyResult" class="story-result"></div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="spiderman-section">
+                <h2>¡Spider-Man también está aquí! 🕷️</h2>
+                <div class="spiderman-container">
+                    <div class="spiderman-info">
+                        <h3>Mi amigo el Hombre Araña</h3>
+                        <p>¡Sabía que te encanta Spider-Man! Por eso he preparado esta sección especial para ti. Spider-Man es tan valiente y amigable como Snoopy, y ambos nos encantan por su gran corazón. 💙</p>
+                        <div class="spiderman-facts">
+                            <h4>¿Por qué Spider-Man es especial?</h4>
+                            <ul>
+                                <li>Porque es un héroe que siempre ayuda a los demás</li>
+                                <li>Porque tiene un gran sentido del humor</li>
+                                <li>Porque es tan adorable como Snoopy</li>
+                            </ul>
+                        </div>
+                        <div class="hidden-message">
+                            <p>Pase el mouse aquí para un mensaje especial...</p>
+                            <div class="secret-message">
+                                <p>💙 Siempre sere su niño y su Batman. La quiero mucho. 💙</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="spiderman-image">
+                        <img src="spiderman.jpeg" alt="Spider-Man adorable">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Hecho con ❤️ para ti</p>
+            <div class="floating-hearts">💖 💙 💖</div>
+        </footer>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="background.mp3" type="audio/mpeg">
+    </audio>
+    <script src="script.js"></script>
+</body>
+</html> 
